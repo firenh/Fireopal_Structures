@@ -1,0 +1,48 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": {
+				"min": 2,
+				"max": 4
+			},
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"weight": 2,
+					"name": "fireopal_structures:chests/logs"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"weight": 2,
+					"name": "fireopal_structures:chests/stones"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"weight": 2,
+					"name": "fireopal_structures:chests/materials_starter"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"weight": 2,
+					"name": "fireopal_structures:chests/iron_tools"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"weight": 2,
+					"name": "fireopal_structures:chests/misc_foods"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"weight": 2,
+					"name": "fireopal_structures:chests/mob_drops"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"weight": 3,
+					"name": "fireopal_structures:chests/player_misc"
+				}
+			]
+		}
+	]
+}

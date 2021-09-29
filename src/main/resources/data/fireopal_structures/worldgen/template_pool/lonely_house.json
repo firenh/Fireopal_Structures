@@ -1,0 +1,33 @@
+{
+	"name": "fireopal_structures:lonely_house",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"projection": "rigid",
+				"location": "fireopal_structures:lonely_house/small",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 2,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"projection": "rigid",
+				"location": "fireopal_structures:lonely_house/large",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 2,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"projection": "rigid",
+				"location": "fireopal_structures:lonely_house/tower",
+				"processors": "minecraft:empty"
+			}
+		}
+	]
+}

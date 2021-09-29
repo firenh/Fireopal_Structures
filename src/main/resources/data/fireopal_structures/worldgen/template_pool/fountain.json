@@ -1,0 +1,15 @@
+{
+	"name": "fireopal_structures:lonely_house",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"projection": "rigid",
+				"location": "fireopal_structures:fountain/small_1",
+				"processors": "minecraft:empty"
+			}
+		}
+	]
+}
