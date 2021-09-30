@@ -1,0 +1,110 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:torch",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 5,
+								"max": 20
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 3,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "fireopal_structures:chests/stones"
+				}
+			]
+		},
+		{
+			"rolls": {
+				"min": 1,
+				"max": 4
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "minecraft:golden_pickaxe",
+					"functions": [
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": 30,
+							"treasure": true
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 3,
+					"name": "minecraft:diamond_pickaxe",
+					"functions": [
+						{
+							"function": "minecraft:enchant_randomly",
+							"conditions": [
+								{
+									"condition": "minecraft:random_chance",
+									"chance": 0.5
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"min": 0,
+								"max": 1550
+							},
+							"conditions": [
+								{
+									"condition": "minecraft:random_chance",
+									"chance": 0.9
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 20,
+					"name": "minecraft:iron_pickaxe",
+					"functions": [
+						{
+							"function": "minecraft:enchant_randomly",
+							"conditions": [
+								{
+									"condition": "minecraft:random_chance",
+									"chance": 0.5
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"min": 0,
+								"max": 239
+							},
+							"conditions": [
+								{
+									"condition": "minecraft:random_chance",
+									"chance": 0.9
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -9,7 +9,6 @@ public class FireopalStructures implements ModInitializer {
 
 	public void onInitialize() {
 		FORegister.init();
-		FOConfiguredStructures.init();
 		FOBiomeModifications.init();
 	}
 

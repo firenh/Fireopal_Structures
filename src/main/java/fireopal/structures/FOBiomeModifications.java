@@ -21,8 +21,10 @@ public class FOBiomeModifications {
     }
 
     public static void init() {
-        addStructure("amethyst_house_addition", FOConfiguredStructures.CONFIGURED_AMETHYST_HOUSE, BiomeSelectors.foundInOverworld());
-        addStructure("lonely_house_addition", FOConfiguredStructures.CONFIGURED_LONELY_HOUSE, BiomeSelectors.foundInOverworld());
-        addStructure("fountain_addition", FOConfiguredStructures.CONFIGURED_FOUNTAIN, BiomeSelectors.foundInOverworld());
+        addStructure("amethyst_house_addition", FORegister.CONFIGURED_AMETHYST_HOUSE, BiomeSelectors.foundInOverworld());
+        addStructure("lonely_house_addition", FORegister.CONFIGURED_LONELY_HOUSE, BiomeSelectors.foundInOverworld());
+        addStructure("fountain_addition", FORegister.CONFIGURED_FOUNTAIN, BiomeSelectors.foundInOverworld());
+
+        addStructure("underground_bunker_addition", FORegister.CONFIGURED_UNDERGROUND_BUNKER, BiomeSelectors.all());
     }
 }
