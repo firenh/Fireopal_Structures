@@ -25,6 +25,8 @@ public class FOBiomeModifications {
         addStructure("lonely_house_addition", FORegister.CONFIGURED_LONELY_HOUSE, BiomeSelectors.foundInOverworld());
         addStructure("fountain_addition", FORegister.CONFIGURED_FOUNTAIN, BiomeSelectors.foundInOverworld());
 
+        //addStructure("statue_addition", FORegister.CONFIGURED_STATUE, BiomeSelectors.foundInOverworld());
+
         addStructure("underground_bunker_addition", FORegister.CONFIGURED_UNDERGROUND_BUNKER, BiomeSelectors.all());
     }
 }

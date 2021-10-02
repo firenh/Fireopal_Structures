@@ -1,4 +1,6 @@
-/*package fireopal.structures.processors;
+/*
+
+package fireopal.structures.processors;
 
 import net.minecraft.structure.Structure.StructureBlockInfo;
 

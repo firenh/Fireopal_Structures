@@ -8,7 +8,7 @@
 				"element_type": "minecraft:single_pool_element",
 				"projection": "rigid",
 				"location": "fireopal_structures:underground_bunker/small_1",
-				"processors": "minecraft:empty"
+				"processors": "fireopal_structures:underground_bunker_processor_list"
 			}
 		},
 		{
@@ -17,7 +17,7 @@
 				"element_type": "minecraft:single_pool_element",
 				"projection": "rigid",
 				"location": "fireopal_structures:underground_bunker/medium_1",
-				"processors": "minecraft:empty"
+				"processors": "fireopal_structures:underground_bunker_processor_list"
 			}
 		}
 	]
