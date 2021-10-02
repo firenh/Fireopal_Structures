@@ -41,7 +41,6 @@ public class FORegister {
                 salt /* Random value to offset structures */
             ))
             .superflatFeature(structure.configure(config))
-            .adjustsSurface()
             .register();
 
             String configuredId = "configured_" + id;
@@ -78,7 +77,7 @@ public class FORegister {
     public static ConfiguredStructureFeature<?, ?> CONFIGURED_AMETHYST_HOUSE = AMETHYST_HOUSE.configure(Configs.AMETHYST_HOUSE_CONFIG);
     public static ConfiguredStructureFeature<?, ?> CONFIGURED_FOUNTAIN = FOUNTAIN.configure(Configs.FOUNTAIN_CONFIG);
 
-    public static ConfiguredStructureFeature<?, ?> CONFIGURED_UNDERGROUND_BUNKER = UNDERGROUND_BUNKER.configure(Configs.TEST_UNDERGROUND_CONFIG);
+    public static ConfiguredStructureFeature<?, ?> CONFIGURED_UNDERGROUND_BUNKER = UNDERGROUND_BUNKER.configure(Configs.UNDERGROUND_BUNKER_CONFIG);
 
     //public static StructureProcessorType<LonelyHouseProcessor> LONELY_HOUSE_PROCESSOR;
 
@@ -87,7 +86,6 @@ public class FORegister {
         register("amethyst_house", AMETHYST_HOUSE, CONFIGURED_AMETHYST_HOUSE, Configs.AMETHYST_HOUSE_CONFIG, 40, 20, -136596002);
         register("fountain", FOUNTAIN, CONFIGURED_FOUNTAIN, Configs.FOUNTAIN_CONFIG, 20, 10, 763363108);
 
-        register("underground_bunker", UNDERGROUND_BUNKER, CONFIGURED_UNDERGROUND_BUNKER, Configs.TEST_UNDERGROUND_CONFIG, 20, 8, 32365135);
+        register("underground_bunker", UNDERGROUND_BUNKER, CONFIGURED_UNDERGROUND_BUNKER, Configs.UNDERGROUND_BUNKER_CONFIG, 20, 8, 32365135);
     }   
-
 }
