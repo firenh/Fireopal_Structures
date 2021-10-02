@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.biome.v1.ModificationPhase;
 import net.minecraft.world.gen.feature.ConfiguredStructureFeature;
 
 public class FOBiomeModifications {
+    @SuppressWarnings("deprecation")
     public static void addStructure(String id, ConfiguredStructureFeature<?, ?> configuredStructureFeature, Predicate<BiomeSelectionContext> biomeSelectors) {
         BiomeModifications.create(FireopalStructures.id(id))
             .add(
@@ -20,12 +21,13 @@ public class FOBiomeModifications {
             );
     }
 
+    @SuppressWarnings("deprecation")
     public static void init() {
         addStructure("amethyst_house_addition", FORegister.CONFIGURED_AMETHYST_HOUSE, BiomeSelectors.foundInOverworld());
         addStructure("lonely_house_addition", FORegister.CONFIGURED_LONELY_HOUSE, BiomeSelectors.foundInOverworld());
         addStructure("fountain_addition", FORegister.CONFIGURED_FOUNTAIN, BiomeSelectors.foundInOverworld());
 
-        //addStructure("statue_addition", FORegister.CONFIGURED_STATUE, BiomeSelectors.foundInOverworld());
+        addStructure("statue_addition", FORegister.CONFIGURED_STATUE, BiomeSelectors.foundInOverworld());
 
         addStructure("underground_bunker_addition", FORegister.CONFIGURED_UNDERGROUND_BUNKER, BiomeSelectors.all());
     }

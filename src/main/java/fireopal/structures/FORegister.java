@@ -21,7 +21,7 @@ import static fireopal.structures.FireopalStructures.id;
 public class FORegister {
     private static void register(String id, StructureFeature<SurfaceStructureConfig> structure, ConfiguredStructureFeature<?, ?> configuredStructure, SurfaceStructureConfig config, int avgChunks, int minChunks, int salt) {
         FabricStructureBuilder.create(id(id), structure)
-            .step(GenerationStep.Feature.TOP_LAYER_MODIFICATION)
+            .step(GenerationStep.Feature.UNDERGROUND_DECORATION)
             .defaultConfig(new StructureConfig(
                 avgChunks, /* Average chunks between structures */
                 minChunks, /* Minimum chunks between structures */
@@ -38,7 +38,7 @@ public class FORegister {
 
     private static void register(String id, StructureFeature<SubmergeableSurfaceStructureConfig> structure, ConfiguredStructureFeature<?, ?> configuredStructure, SubmergeableSurfaceStructureConfig config, int avgChunks, int minChunks, int salt) {
         FabricStructureBuilder.create(id(id), structure)
-            .step(GenerationStep.Feature.TOP_LAYER_MODIFICATION)
+            .step(GenerationStep.Feature.UNDERGROUND_DECORATION)
             .defaultConfig(new StructureConfig(
                 avgChunks, /* Average chunks between structures */
                 minChunks, /* Minimum chunks between structures */
@@ -55,7 +55,7 @@ public class FORegister {
 
     private static void register(String id, StructureFeature<UndergroundStructureConfig> structure, ConfiguredStructureFeature<?, ?> configuredStructure, UndergroundStructureConfig config, int avgChunks, int minChunks, int salt) {
         FabricStructureBuilder.create(id(id), structure)
-            .step(GenerationStep.Feature.TOP_LAYER_MODIFICATION)
+            .step(GenerationStep.Feature.UNDERGROUND_DECORATION)
             .defaultConfig(new StructureConfig(
                 avgChunks, /* Average chunks between structures */
                 minChunks, /* Minimum chunks between structures */
@@ -97,7 +97,7 @@ public class FORegister {
     public static StructureFeature<SurfaceStructureConfig> AMETHYST_HOUSE = surfaceStructure();
     public static StructureFeature<SurfaceStructureConfig> FOUNTAIN = surfaceStructure();
 
-        //public static StructureFeature<SubmergeableSurfaceStructureConfig> STATUE = submergeableSurfaceStructure();
+    public static StructureFeature<SubmergeableSurfaceStructureConfig> STATUE = submergeableSurfaceStructure();
 
     public static StructureFeature<UndergroundStructureConfig> UNDERGROUND_BUNKER = undergroundStructure();
 
@@ -109,7 +109,7 @@ public class FORegister {
     public static ConfiguredStructureFeature<?, ?> CONFIGURED_AMETHYST_HOUSE = AMETHYST_HOUSE.configure(Configs.AMETHYST_HOUSE_CONFIG);
     public static ConfiguredStructureFeature<?, ?> CONFIGURED_FOUNTAIN = FOUNTAIN.configure(Configs.FOUNTAIN_CONFIG);
 
-        //public static ConfiguredStructureFeature<?, ?> CONFIGURED_STATUE = STATUE.configure(Configs.STATUE_CONFIG);
+    public static ConfiguredStructureFeature<?, ?> CONFIGURED_STATUE = STATUE.configure(Configs.STATUE_CONFIG);
 
     public static ConfiguredStructureFeature<?, ?> CONFIGURED_UNDERGROUND_BUNKER = UNDERGROUND_BUNKER.configure(Configs.UNDERGROUND_BUNKER_CONFIG);
 
@@ -117,10 +117,10 @@ public class FORegister {
             //Registry.register(Registry.STRUCTURE_PROCESSOR, FireopalStructures.id("general_block_decay_processor"), GENERAL_BLOCK_DECAY_PROCESSOR);
 
         register("lonely_house", LONELY_HOUSE, CONFIGURED_LONELY_HOUSE, Configs.LONELY_HOUSE_CONFIG, 35, 20, -1554642242);
-        register("amethyst_house", AMETHYST_HOUSE, CONFIGURED_AMETHYST_HOUSE, Configs.AMETHYST_HOUSE_CONFIG, 40, 20, -136596002);
+        register("amethyst_house", AMETHYST_HOUSE, CONFIGURED_AMETHYST_HOUSE, Configs.AMETHYST_HOUSE_CONFIG, 50, 20, -136596002);
         register("fountain", FOUNTAIN, CONFIGURED_FOUNTAIN, Configs.FOUNTAIN_CONFIG, 20, 10, 763363108);
 
-            //register("statue", STATUE, CONFIGURED_STATUE, Configs.STATUE_CONFIG, 10, 3, 1288897705);
+        register("statue", STATUE, CONFIGURED_STATUE, Configs.STATUE_CONFIG, 50, 30, 1288897705);
 
         register("underground_bunker", UNDERGROUND_BUNKER, CONFIGURED_UNDERGROUND_BUNKER, Configs.UNDERGROUND_BUNKER_CONFIG, 20, 8, 32365135);
     }   

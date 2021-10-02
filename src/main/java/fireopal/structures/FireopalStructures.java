@@ -6,7 +6,7 @@ import net.minecraft.util.Identifier;
 public class FireopalStructures implements ModInitializer {
 	static String MODID = "fireopal_structures";
 
-
+    @Override
 	public void onInitialize() {
 		FORegister.init();
 		FOBiomeModifications.init();
